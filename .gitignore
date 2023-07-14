@@ -36,3 +36,6 @@ app/.sass-cache/
 # System files
 .DS_Store
 Thumbs.db
+
+# Server
+server/.env
