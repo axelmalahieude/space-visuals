@@ -6,13 +6,16 @@ const app: Express = express();
 const port = 3000;
 
 /**
- * Change once we connect this to the frontend
+ * TODO: Change once we connect this to the frontend
  */
 app.get('/', (_req: Request, res: ExpressResponse) => {
   res.send('Hello World!')
 });
 
-app.get('/test-fetch', async (_req: Request, res: ExpressResponse) => {
+/**
+ * TODO: Change to post request once we get front end set up
+ */
+app.get('/update-database', async (_req: Request, res: ExpressResponse) => {
   const username = process.env.SPACE_TRACK_USER;
   const password = process.env.SPACE_TRACK_PASS;
   // const loginRes: Response = await fetch(`https://www.space-track.org/ajaxauth/login`, {
