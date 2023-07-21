@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { CesiumComponent } from './cesium/cesium.component';
+import { CesiumDirective } from './cesium/cesium.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CesiumComponent
+    CesiumComponent,
+    CesiumDirective
   ],
   imports: [
     BrowserModule
